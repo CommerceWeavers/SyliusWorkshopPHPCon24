@@ -32,9 +32,8 @@ $ open http://localhost:8000/
 For more detailed instruction please visit [installation chapter in our docs](https://docs.sylius.com/en/latest/book/installation/installation.html).
 
 ### Docker
-
-#### Development
-
-Make sure you have installed [Docker](https://docs.docker.com/get-docker/) on your local machine.
-Execute `make init` in your favorite terminal and wait some time until the services will be ready.
-Then enter `localhost` in your browser or execute `open localhost` in your terminal.
+```bash
+$ cp compose.override.yml.dist compose.override.yml
+$ make setup
+$ open http://localhost:9000/
+```
