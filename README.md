@@ -33,7 +33,7 @@ For more detailed instruction please visit [installation chapter in our docs](ht
 
 ### Docker
 ```bash
-$ cp compose.override.yml.dist compose.override.yml
+$ cp compose.override.dist.yml compose.override.yml
 $ make setup
 $ open http://localhost:9000/
 ```
