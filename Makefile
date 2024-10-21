@@ -1,7 +1,20 @@
 setup:
 	@echo "Setting up project..."
+	@make docker.up
 	@make backend.setup
 	@make frontend.setup
+
+docker.up:
+	@echo "Starting docker..."
+	@docker compose up -d
+
+docker.stop:
+	@echo "Stopping docker..."
+	@docker compose stop
+
+docker.down:
+	@echo "Stopping and removing docker..."
+	@docker compose down
 
 backend.setup:
 	@echo "Setting up backend..."
