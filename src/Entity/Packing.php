@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Form\PackingType;
 use App\Grid\PackingGrid;
 use App\Repository\PackingRepository;
 use Doctrine\ORM\Mapping as ORM;
@@ -14,13 +15,12 @@ use Sylius\Resource\Metadata\Update;
 use Sylius\Resource\Model\ResourceInterface;
 
 #[ORM\Entity(repositoryClass: PackingRepository::class)]
-#[AsResource(section: 'admin', routePrefix: 'admin', templatesDir: '@SyliusAdmin/shared/crud')]
+#[AsResource(section: 'admin', formType: PackingType::class, templatesDir: '@SyliusAdmin/shared/crud', routePrefix: 'admin')]
 #[Index(grid: PackingGrid::class)]
-#[Create]
+#[Create()]
 #[Update]
 #[Delete]
-#[Create]
-#[Show]
+//#[Show]
 class Packing implements ResourceInterface
 {
     #[ORM\Id]
