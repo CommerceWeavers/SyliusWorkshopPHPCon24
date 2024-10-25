@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Form;
+namespace App\Packing\Form;
 
-use App\Entity\Packing;
+use App\Packing\Entity\Packing;
 use Sylius\Bundle\MoneyBundle\Form\Type\MoneyType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

@@ -2,15 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App\Fixture;
+namespace App\Packing\Fixture;
 
-use App\Entity\Packing;
 use Doctrine\Persistence\ObjectManager;
 use Faker\Factory;
 use Sylius\Bundle\FixturesBundle\Fixture\AbstractFixture;
 use Sylius\Resource\Factory\FactoryInterface;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
-use Symfony\Component\DependencyInjection\Attribute\Autowire;
 
 final class PackingFixture extends AbstractFixture
 {

@@ -2,7 +2,7 @@
 
 namespace App\Repository;
 
-use App\Entity\Packing;
+use App\Packing\Entity\Packing;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use Sylius\Bundle\ResourceBundle\Doctrine\ORM\ResourceRepositoryTrait;

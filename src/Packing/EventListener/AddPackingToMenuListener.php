@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\EventListener;
+namespace App\Packing\EventListener;
 
 use Sylius\Bundle\AdminBundle\Menu\MainMenuBuilder;
 use Sylius\Bundle\UiBundle\Menu\Event\MenuBuilderEvent;
 use Symfony\Component\EventDispatcher\Attribute\AsEventListener;
-use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 
 final readonly class AddPackingToMenuListener
 {

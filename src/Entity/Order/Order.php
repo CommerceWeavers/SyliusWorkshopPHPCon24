@@ -11,4 +11,8 @@ use Sylius\Component\Core\Model\Order as BaseOrder;
 #[ORM\Table(name: 'sylius_order')]
 class Order extends BaseOrder
 {
+    public function packingTotal(): int
+    {
+        return $this->getAdjustmentsTotalRecursively('packing_fee');
+    }
 }

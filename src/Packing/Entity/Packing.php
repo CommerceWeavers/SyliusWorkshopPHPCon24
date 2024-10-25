@@ -1,16 +1,15 @@
 <?php
 
-namespace App\Entity;
+namespace App\Packing\Entity;
 
-use App\Form\PackingType;
-use App\Grid\PackingGrid;
+use App\Packing\Form\PackingType;
+use App\Packing\Grid\PackingGrid;
 use App\Repository\PackingRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Sylius\Resource\Metadata\AsResource;
 use Sylius\Resource\Metadata\Create;
 use Sylius\Resource\Metadata\Delete;
 use Sylius\Resource\Metadata\Index;
-use Sylius\Resource\Metadata\Show;
 use Sylius\Resource\Metadata\Update;
 use Sylius\Resource\Model\ResourceInterface;
 

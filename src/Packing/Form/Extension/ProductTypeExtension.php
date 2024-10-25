@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Form\Extension;
+namespace App\Packing\Form\Extension;
 
 use Sylius\Bundle\AdminBundle\Form\Type\ProductType;
 use Symfony\Component\Form\AbstractTypeExtension;
 use Symfony\Component\Form\FormBuilderInterface;
+
 // <!-- BEGIN HOOKABLE | hook: "sylius_admin.product.update.content.form.sections.general", name: "code", template: "@SyliusAdmin/product/form/sections/general/code.html.twig", priority: 600 -->
 final class ProductTypeExtension extends AbstractTypeExtension
 {
