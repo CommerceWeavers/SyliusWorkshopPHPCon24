@@ -49,7 +49,7 @@ final class PackingGrid extends AbstractGrid implements ResourceAwareGridInterfa
             )
             ->addActionGroup(
                 ItemActionGroup::create(
-                     ShowAction::create(),
+//                     ShowAction::create(),
                     UpdateAction::create(),
                     DeleteAction::create()
                 )
