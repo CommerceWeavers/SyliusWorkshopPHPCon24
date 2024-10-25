@@ -5,12 +5,16 @@ namespace App\Repository;
 use App\Entity\Packing;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Sylius\Bundle\ResourceBundle\Doctrine\ORM\ResourceRepositoryTrait;
+use Sylius\Component\Resource\Repository\RepositoryInterface;
 
 /**
  * @extends ServiceEntityRepository<Packing>
  */
-class PackingRepository extends ServiceEntityRepository
+class PackingRepository extends ServiceEntityRepository implements RepositoryInterface
 {
+    use ResourceRepositoryTrait;
+
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Packing::class);
